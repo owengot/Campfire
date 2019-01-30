@@ -80,7 +80,7 @@ export default {
         password: this.password
       })
         .then(() => {
-          this.$router.push('/account')
+          this.$router.push('/account/dashboard')
         })
         .catch((error) => {
           console.log(error)

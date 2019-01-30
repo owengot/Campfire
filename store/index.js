@@ -6,6 +6,9 @@ function createNewAccount (user) {
   return firebase.database().ref(`accounts/${user.uid}`).set({
     displayName: user.displayName || user.email.split('@')[0], // use part of the email as a username
     email: user.email,
+    id: user.uid,
+    description: user.description,
+    websiteUrl: user.websiteUrl,
     image: user.newImage || '/images/default-profile.png' // supply a default profile image for all users
   })
 }
@@ -88,7 +91,9 @@ const createStore = () => {
       },
       userUpdate ({ state }, newData) {
         return firebase.database().ref(`accounts/${state.user.uid}`).update({
-          displayName: newData.displayName
+          displayName: newData.displayName,
+          description: newData.description,
+          websiteUrl: newData.websiteUrl
         })
       },
       userUpdateImage ({ state }, image) {

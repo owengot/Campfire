@@ -5,7 +5,7 @@ export default function ({
   store,
   redirect
 }) {
-  if (!isServer && (store.getters.isAuthenticated && firebase.auth().currentUser)) {
-    return redirect('/account')
+  if (!store.getters.isAuthenticated) {
+    return redirect('/account/login')
   }
 }

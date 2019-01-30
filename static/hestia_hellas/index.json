@@ -1,0 +1,69 @@
+{	
+	"organisation_name": "Hestia Hellas",
+	
+	"organisation_description": "Hestia Hellas serves vulnerable populations in Athens including Greeks and refugees. We focus on integration, autonomy and sustainability by providing psychosocial support, livelihoods skills, therapeutic interventions for special needs children and community advocacy.",
+	
+	"organisation_website": "hestiahellas.org",
+	
+	"organisation_logo" : "images/logo.jpeg",
+	
+	"organisation_rank": 132,
+	
+	"smart_aid": 150,
+	
+	"daily_visits": 45,
+	
+	"cumulative_visits": 4091,
+	
+	"units_total": 240,
+	
+	"units_cost": 9400,
+	
+	"units_value": 23400,
+	
+	"volunteers_total": 3400,
+	
+	"volunteers_stay": 3.5,
+	
+	"expenses": {
+		"admin": 500,
+        "direct": 400
+	},
+	
+	"annual_income": [
+        {
+			"year": 2016,
+            "inkind": 22000, 
+            "donations": 19000
+		},
+		
+		{
+			"year": 2017,
+            "inkind": 12000, 
+            "donations": 13000
+		},
+		
+		{
+			"year": 2018,
+            "inkind": 29000, 
+            "donations": 12000
+		}
+    ],
+	"team": [ 
+		  {
+			"paid": {
+				"refugee": 2018,
+				  "local": 29000, 
+				  "international": 12000
+			}
+		},
+		
+		{
+			"unpaid": {
+				"refugee": 2019,
+			    "local": 39000, 
+			    "international": 19000
+			}
+		}
+	]
+}

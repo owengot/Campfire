@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Nuxt Firebase Auth',
+    title: 'Campfire',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'An example of using Nuxt with Firebase to auth users without a server' }
+      { hid: 'description', name: 'description', content: 'Campfire Dashboard' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -37,6 +37,9 @@ module.exports = {
   /*
    ** Router config
    */
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   router: {
     // middleware: 'check-auth'
   },

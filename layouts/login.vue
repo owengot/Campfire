@@ -25,16 +25,41 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+.container {
+background-image: linear-gradient(270deg,#4cb4e1,#3e91cc,#2dcca7);
+background-size: 600% 100%;
+	-webkit-animation: bg-pan-left 8s both;
+	        animation: bg-pan-left 8s both;
+width: 100%;
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 ul li {
   list-style-type: none
 }
-
 .navbar {
   width: 100%;
   box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-  background: rgba(242, 242, 242, 0.97);
+  background: rgba(250, 250, 250, 0.98);
   display: block;
   top:0;
   position: absolute;
@@ -74,6 +99,7 @@ ul li {
   font-size: 1.15em;
   text-decoration: none;
   transition: all .2s ease;
+  font-weight: 500;
 
 &:nth-child(2n) {
    border-radius: 0 !important;
@@ -82,7 +108,7 @@ ul li {
 .nuxt-link-exact-active {
   background: #60B99A;
   color: white !important;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 
